@@ -15,3 +15,5 @@ ADD src src
 
 RUN npm run-script css:darwin:linux
 RUN npm run-script client-js
+
+CMD ["node -r ts-node/register src/app/server.ts"]
